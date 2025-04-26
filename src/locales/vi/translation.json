@@ -1,0 +1,17 @@
+{
+  "header": {
+    "author": "Lê Nguyên Hùng",
+    "home": "Trang chủ",
+    "about": "Về tôi",
+    "project": "Dự án",
+    "contact": "Liên hệ"
+  },
+  "hero": {
+    "greeting": "Xin chào",
+    "iAm": "Tôi là"
+  },
+  "button": {
+    "experience": "Kinh nghiệm",
+    "dowload": "Tải xuống CV"
+  }
+}

@@ -1,0 +1,52 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+:root {
+  --background: linear-gradient(135deg, #ffffff, #d1f4f9);
+  --background-language: #fff;
+  --text-main: #00bb95;
+  --icon: #0866ff;
+  --text-content: #333;
+  --border-btn: #d6d6d6;
+  --text-btn: black;
+  --foreground: black;
+  --border-hero-gradient: ;
+  --border-hero: rgba(208, 208, 208, 0.589);
+  --background-hero-right: linear-gradient(
+    90deg,
+    rgba(240, 252, 253, 1) 0%,
+    rgba(255, 255, 255, 1) 100%
+  );
+  --border-top-hero-right: linear-gradient(
+    90deg,
+    rgba(255, 173, 244, 1) 0%,
+    rgba(107, 255, 156, 1) 58%,
+    rgba(149, 122, 255, 1) 100%
+  );
+}
+
+.dark {
+  --background: linear-gradient(
+    90deg,
+    rgba(13, 18, 36, 1) 0%,
+    rgba(0, 0, 64, 1) 88%,
+    rgba(13, 0, 64, 1) 100%
+  );
+  --background-language: #3a3a3a;
+  --text-main: #fc5bab;
+  --icon: #fc5bab;
+  --text-content: #16f2b3;
+  --border-btn: #0f1462;
+  --text-btn: white;
+  --foreground: #fff;
+  --border-hero-gradient: ;
+  --border-hero: #ee32ff51;
+  --background-hero-right: linear-gradient(to right, #0d1533, #060a3e);
+  --border-top-hero-right: linear-gradient(
+    90deg,
+    rgba(204, 0, 177, 1) 0%,
+    rgba(2, 153, 52, 1) 58%,
+    rgba(34, 0, 171, 1) 100%
+  );
+}

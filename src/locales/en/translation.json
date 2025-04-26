@@ -1,0 +1,17 @@
+{
+  "header": {
+    "author": "Lê Nguyên Hùng",
+    "home": "Home",
+    "about": "About me",
+    "project": "Project",
+    "contact": "Contact"
+  },
+  "hero": {
+    "greeting": "Hello",
+    "iAm": "I am"
+  },
+  "button": {
+    "experience": "Experience",
+    "dowload": "Dowload CV"
+  }
+}

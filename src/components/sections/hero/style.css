@@ -1,0 +1,47 @@
+@keyframes wave-animation {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(14deg);
+  }
+  20% {
+    transform: rotate(-8deg);
+  }
+  30% {
+    transform: rotate(14deg);
+  }
+  40% {
+    transform: rotate(-4deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+  60% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.wave {
+  display: inline-block;
+  animation: wave-animation 3s infinite;
+  transform-origin: 70% 70%;
+}
+
+.hero-right .circle {
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+}
+.hero-right .circle-first {
+  background-color: #fc5f56;
+}
+.hero-right .circle-second {
+  background-color: #fabd29;
+}
+.hero-right .circle-third {
+  background-color: #1cc93d;
+}
