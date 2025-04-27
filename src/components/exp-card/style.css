@@ -1,0 +1,13 @@
+.exp-card {
+  background-image: var(--bg-exp-card);
+  border: 1px solid #e0e0e0;
+  border-radius: 15px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.exp-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  border-color: #fa9348;
+}

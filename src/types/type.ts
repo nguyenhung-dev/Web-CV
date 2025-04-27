@@ -10,7 +10,6 @@ export type AppData = {
   CV_URL?: string;
  }
 
-
 export type Developer = {
   name?: string;
   education?: string;
@@ -20,4 +19,11 @@ export type Developer = {
   quickLearner?: boolean;
   problemSolver?: boolean;
   availableForWork?: boolean;
+}
+
+export type ExpCard = {
+  time?:string;
+  title?: string;
+  platform?: string[];
+  desc?: string;
 }

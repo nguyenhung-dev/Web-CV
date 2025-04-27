@@ -13,16 +13,16 @@ const HeroRight = () => {
   };
 
   return (
-    <div className="hero-right sm:w-1/2 relative">
-      <div className="border-top absolute rounded-[50%] h-[3px] w-[98%] top-[20px] z-2 right-[50%] translate-x-[50%]" style={{ backgroundImage: 'var(--border-top-hero-right)' }}></div>
-      <div className="code-body border rounded-[8px] border-[var(--border-hero)] z-1 w-full absolute right-0 top-[20px]"
+    <div className="hero-right mt-8 sm:mt-3 sm:w-1/2 relative">
+      <div className="border-top absolute rounded-[50%] h-[3px] w-[98%] top-0 z-2 right-[50%] translate-x-[50%]" style={{ backgroundImage: 'var(--border-top-hero-right)' }}></div>
+      <div className="code-body border rounded-[8px] border-[var(--border-hero)] z-1 w-full"
         style={{ backgroundImage: 'var(--background-hero-right)' }}>
         <div className="code-body-control border-b border-[var(--border-hero)] px-7 py-4 flex gap-2" >
           <div className="circle circle-first"></div>
           <div className="circle circle-second"></div>
           <div className="circle circle-third"></div>
         </div>
-        <div className="code-body-content font-mono text-[16px] px-7 my-5 font-[400] text-[var(--foreground)]">
+        <div className="code-body-content font-mono text-[16p x] px-7 my-5 font-[400] text-[var(--foreground)]">
           <div>
             <span className="text-pink-600 font-bold">const</span>
             <span className="ml-2 ">developer</span>

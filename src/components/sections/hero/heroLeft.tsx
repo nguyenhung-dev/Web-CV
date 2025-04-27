@@ -1,5 +1,4 @@
 import { useTranslation } from 'react-i18next';
-import { Typewriter } from 'react-simple-typewriter'
 import TypewriterEffect from '@/components/typewriter/Typewriter';
 import { APP_DATA } from '@/data/data';
 import SocicalMedia from '@/components/socical';
@@ -35,7 +34,7 @@ const HeroLeft = () => {
           github={APP_DATA.GITHUB_URL}
           gmail={APP_DATA.GMAIL_URL} />
       </div>
-      <div className='flex gap-7 mt-10 sm:mt-15'>
+      <div className='flex gap-2 md:gap-7 mt-10 sm:mt-15'>
         <div className='hidden sm:block'>
           <CustomButton text={t('button.experience')} icon={<AiFillFire color='#ff5959' />} style={{
             color: "var(--text-btn)"

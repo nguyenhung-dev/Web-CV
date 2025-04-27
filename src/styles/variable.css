@@ -10,7 +10,7 @@
   --text-content: #333;
   --border-btn: #d6d6d6;
   --text-btn: black;
-  --foreground: black;
+  --foreground: rgb(49, 49, 49);
   --border-hero-gradient: ;
   --border-hero: rgba(208, 208, 208, 0.589);
   --background-hero-right: linear-gradient(
@@ -23,6 +23,14 @@
     rgba(255, 173, 244, 1) 0%,
     rgba(107, 255, 156, 1) 58%,
     rgba(149, 122, 255, 1) 100%
+  );
+  --bg-intro-right: #4bc6ff;
+  --border-top-exp: #a1a1a16b;
+  --bg-exp-card: linear-gradient(
+    249deg,
+    rgb(241, 235, 255) 0%,
+    rgba(122, 224, 255, 1) 63%,
+    rgb(213, 213, 213) 100%
   );
 }
 
@@ -48,5 +56,13 @@
     rgba(204, 0, 177, 1) 0%,
     rgba(2, 153, 52, 1) 58%,
     rgba(34, 0, 171, 1) 100%
+  );
+  --bg-intro-right: #005b85;
+  --border-top-exp: #ffffff28;
+  --bg-exp-card: linear-gradient(
+    249deg,
+    rgb(45, 42, 54) 0%,
+    rgb(1, 40, 52) 63%,
+    rgb(19, 12, 64) 100%
   );
 }

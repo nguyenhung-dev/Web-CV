@@ -13,5 +13,25 @@
   "button": {
     "experience": "Experience",
     "dowload": "Dowload CV"
+  },
+  "introduce": {
+    "about": "About",
+    "myself": "Myself",
+    "heading1": "Passionate about programming, but it seems programming doesn't love me back. Nevertheless, I keep learning a little bit at a time.",
+    "heading2": "Frontend development is not just a job, it's an art! I turn ideas into visual and dynamic experiences.",
+    "header3.1": "Beautiful interfaces don't happen by themselves — they require a bit of ",
+    "header3.2": "a touch of ",
+    "header3.3": "and a lot of ",
+    "header3.4": "I love creating products that make users feel at ease from the very first glance.",
+    "passion": "Passion!",
+    "heading4.1": "Front-end",
+    "heading4.2":" is my world, where I transform code into emotions! I never stop learning and creating to deliver the smoothest web experience."
+  },
+  "exp": {
+    "experiences": "Experiences",
+    "exp-title": "Although I have not had the opportunity to participate in real-world jobs or internships, I have always been proactive in learning and developing my professional skills through online learning platforms. Below are some courses I have completed, which have helped me build a strong foundation in the field of ",
+    "exp-programming": "Website programming",
+    "platforms": "Platforms: ",
+    "desc": "Description: "
   }
 }

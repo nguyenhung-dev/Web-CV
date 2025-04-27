@@ -13,5 +13,25 @@
   "button": {
     "experience": "Kinh nghiệm",
     "dowload": "Tải xuống CV"
+  },
+  "introduce": {
+    "about": "Giới thiệu",
+    "myself": "Bản thân",
+    "heading1": "Đam mê lập trình, nhưng có vẻ như lập trình chưa yêu lại tôi. Dẫu vậy, tôi vẫn không ngừng học hỏi từng chút một.",
+    "heading2": "Lập trình giao diện không chỉ là công việc, mà là nghệ thuật! Tôi biến những ý tưởng thành trải nghiệm trực quan và sống động.",
+    "header3.1": "Giao diện đẹp không tự nhiên mà có — nó cần một chút ",
+    "header3.2": "một ít ",
+    "header3.3": "và rất nhiều ",
+    "header3.4": "Tôi yêu việc tạo ra những sản phẩm giúp người dùng thấy thoải mái ngay từ cái nhìn đầu tiên.",
+    "passion": "Đam mê!",
+    "heading4.1": "Front-end",
+    "heading4.2": " là thế giới của tôi, nơi tôi biến code thành cảm xúc! Tôi không ngừng học hỏi và sáng tạo để mang lại trải nghiệm web mượt mà nhất."
+  },
+  "exp": {
+    "experiences": "Kinh nghiệm làm việc",
+    "exp-title": "Dù tôi chưa có cơ hội tham gia các công việc thực tế hoặc thực tập, nhưng tôi luôn chủ động trong việc học hỏi và phát triển các kỹ năng chuyên môn qua các nền tảng học trực tuyến. Dưới đây là một số khóa học tôi đã hoàn thành, giúp tôi xây dựng nền tảng vững chắc trong lĩnh vực ",
+    "exp-programming": "Lập trình Website",
+    "platforms": "Nền tảng:",
+    "desc": "Mô tả:"
   }
 }
