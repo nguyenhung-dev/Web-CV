@@ -1,7 +1,7 @@
 import { Developer } from "@/types/type";
 import "./style.css";
 
-const heroRight = () => {
+const HeroRight = () => {
   const developerData: Developer = {
     name: "Lê Nguyên Hùng",
     education: "Trường Cao đẳng FPT Polytechnic",
@@ -17,7 +17,7 @@ const heroRight = () => {
       <div className="border-top absolute rounded-[50%] h-[3px] w-[98%] top-[20px] z-2 right-[50%] translate-x-[50%]" style={{ backgroundImage: 'var(--border-top-hero-right)' }}></div>
       <div className="code-body border rounded-[8px] border-[var(--border-hero)] z-1 w-full absolute right-0 top-[20px]"
         style={{ backgroundImage: 'var(--background-hero-right)' }}>
-        <div className="code-body-control border-b border-t border-[var(--border-hero)] px-7 py-4 flex gap-2" >
+        <div className="code-body-control border-b border-[var(--border-hero)] px-7 py-4 flex gap-2" >
           <div className="circle circle-first"></div>
           <div className="circle circle-second"></div>
           <div className="circle circle-third"></div>
@@ -84,4 +84,4 @@ const heroRight = () => {
   )
 }
 
-export default heroRight;
+export default HeroRight;

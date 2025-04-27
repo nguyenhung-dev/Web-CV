@@ -1,5 +1,6 @@
 import { useTranslation } from 'react-i18next';
-import Typewriter from 'typewriter-effect';
+import { Typewriter } from 'react-simple-typewriter'
+import TypewriterEffect from '@/components/typewriter/Typewriter';
 import { APP_DATA } from '@/data/data';
 import SocicalMedia from '@/components/socical';
 import CustomButton from '@/components/button';
@@ -7,9 +8,10 @@ import { AiFillFire } from "react-icons/ai";
 import { IoMdDownload } from "react-icons/io";
 import "./style.css"
 
-const heroLeft = () => {
-
+const HeroLeft = () => {
   const { t } = useTranslation();
+  const data = ['Hello world!', 'Welcome to my CV site!', 'Let’s build something amazing.'];
+
   return (
     <div className="hero-left sm:w-1/2">
       <h2 className='text-2xl sm:text-3xl font-medium mb-2 sm:mb-3'>
@@ -25,13 +27,7 @@ const heroLeft = () => {
         <span className='ml-[15px] text-[var(--text-main)] font-bold'>{t('header.author')}</span>
       </h2>
       <div className='text-[22px] text-[var(--text-content)] font-medium'>
-        <Typewriter
-          options={{
-            strings: ['Hello world!', 'Welcome to my CV site!', 'Let’s build something amazing.'],
-            autoStart: true,
-            loop: true,
-          }}
-        />
+        <TypewriterEffect data={data} />
       </div>
       <div className='mt-8 sm:mt-15'>
         <SocicalMedia
@@ -56,4 +52,4 @@ const heroLeft = () => {
   )
 }
 
-export default heroLeft
+export default HeroLeft
