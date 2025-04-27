@@ -7,7 +7,7 @@ import Skills from "@/components/sections/skill";
 const HomePage = () => {
   return (
     <div className="mx-auto max-w-7xl px-4 sm:px-8 lg:px-8">
-      <section className="heroSection sm:flex py-15">
+      <section className="heroSection sm:flex py-6 sm:py-15">
         <HeroLeft />
         <HeroRight />
       </section>

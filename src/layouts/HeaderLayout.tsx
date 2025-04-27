@@ -10,7 +10,7 @@ import viLang from "@/assets/svg/language/vi.svg"
 import enLang from "@/assets/svg/language/en.svg"
 const HeaderLayout = () => {
   const { t, i18n } = useTranslation();
-  const [theme, setTheme] = useState<'dark' | 'light'>('light');
+  const [theme, setTheme] = useState<'dark' | 'light'>('dark');
   const navigation = [
     { name: t('header.home'), href: '/', current: true },
     { name: t('header.about'), href: '/about', current: false },
@@ -73,7 +73,7 @@ const HeaderLayout = () => {
             </div>
           </div>
           <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
-            <Menu as="div" className="relative mr-2 sm:mr-3 ">
+            <Menu as="div" className="relative mr-3 ">
               <div onClick={toggleTheme}>{theme === 'dark' ? <BsSunFill color='yellow' className='text-xl cursor-pointer' /> : <BsFillMoonStarsFill color='black' className='text-l cursor-pointer' />}</div>
             </Menu>
             <Menu as="div" className="relative inline-block text-left">
@@ -87,7 +87,7 @@ const HeaderLayout = () => {
               </div>
               <MenuItems
                 transition
-                className="absolute right-0 z-10 mt-2 w-30 sm:w-40 origin-top-right rounded-md bg-[var(--background-language)] text-[var(--foreground)] shadow-lg ring-1 ring-black/5 transition focus:outline-hidden data-closed:scale-95 data-closed:transform data-closed:opacity-0 data-enter:duration-100 data-enter:ease-out data-leave:duration-75 data-leave:ease-in"
+                className="absolute right-0 z-10 mt-2 w-35 sm:w-40 origin-top-right rounded-md bg-[var(--background-language)] text-[var(--foreground)] shadow-lg ring-1 ring-black/5 transition focus:outline-hidden data-closed:scale-95 data-closed:transform data-closed:opacity-0 data-enter:duration-100 data-enter:ease-out data-leave:duration-75 data-leave:ease-in"
               >
                 <div className="py-1">
                   <MenuItem>

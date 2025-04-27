@@ -13,7 +13,7 @@ const HeroLeft = () => {
 
   return (
     <div className="hero-left sm:w-1/2">
-      <h2 className='text-2xl sm:text-3xl font-medium mb-2 sm:mb-3'>
+      <h2 className='text-3xl font-medium mb-2 sm:mb-3'>
         <span className='text-[var(--foreground)]'>
           {t('hero.greeting')} !
         </span>

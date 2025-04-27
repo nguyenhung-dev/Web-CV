@@ -41,7 +41,7 @@ const Experience = () => {
       </div>
       <div className="flex flex-col md:flex-row min-h-[500px]">
         <div className="exp-left w-full md:w-1/2">
-          <div className="w-[60%] mx-auto h-full relative min-h-[300px] sm:min-h-[600px]">
+          <div className="w-[60%] mx-auto h-full relative min-h-[230px] sm:min-h-[600px]">
             <img src={expIcon} alt="experience" className="exp-icon absolute bottom-[50%] translate-y-[50%] left-[50%] translate-x-[-50%] w-[90%] md:w-full z-2" />
             <div className="circle-rotate absolute bottom-[45%] translate-y-[100%] md:translate-y-[100%] left-[50%] translate-x-[-40%] flex justify-center z-1 w-[65%] md:w-[70%] aspect-[1] overflow-hidden m-auto">
               <div className="w-full h-full rounded-full custom-border"></div>
