@@ -22,7 +22,7 @@ const HeroRight = () => {
           <div className="circle circle-second"></div>
           <div className="circle circle-third"></div>
         </div>
-        <div className="code-body-content font-mono text-[16p x] px-7 my-5 font-[400] text-[var(--foreground)]">
+        <code className="block code-body-content font-mono text-[16p x] px-7 my-5 font-[400] text-[var(--foreground)]">
           <div>
             <span className="text-pink-600 font-bold">const</span>
             <span className="ml-2 ">developer</span>
@@ -78,7 +78,7 @@ const HeroRight = () => {
             <span>{`};`}</span>
           </div>
 
-        </div>
+        </code>
       </div>
     </div >
   )

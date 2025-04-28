@@ -49,7 +49,7 @@ const HeaderLayout = () => {
           </div>
           <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
             <div className="flex shrink-0 items-center">
-              <Link to="/" className="logo text-[20px] font-medium">Portfolio</Link>
+              <Link to="/" className="logo text-[20px] font-medium"><pre>Portfolio</pre></Link>
             </div>
             <div className="hidden sm:ml-6 sm:block">
               <div className="flex space-x-4">
