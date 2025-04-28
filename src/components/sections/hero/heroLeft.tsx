@@ -5,11 +5,22 @@ import SocicalMedia from '@/components/socical';
 import CustomButton from '@/components/button';
 import { AiFillFire } from "react-icons/ai";
 import { IoMdDownload } from "react-icons/io";
+import myCV from "@/assets/files/pdf/cv.pdf";
 import "./style.css"
 
 const HeroLeft = () => {
   const { t } = useTranslation();
   const data = ['Hello world!', 'Welcome to my CV site!', 'Let’s build something amazing.'];
+
+  const handleScrollToSection = (id: string) => {
+    const section = document.getElementById(id);
+    if (section) {
+      section.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      });
+    }
+  };
 
   return (
     <div className="hero-left sm:w-1/2">
@@ -38,13 +49,13 @@ const HeroLeft = () => {
         <div className='hidden sm:block'>
           <CustomButton text={t('button.experience')} icon={<AiFillFire color='#ff5959' />} style={{
             color: "var(--text-btn)"
-          }} />
+          }} onClick={() => handleScrollToSection("experience")} />
         </div>
         <div className='mx-auto sm:mx-0'>
           <CustomButton text={t('button.dowload')} icon={<IoMdDownload color='#fff' />} style={{
             backgroundImage: "linear-gradient(to right, #ec4899, #8b5cf6)",
             border: "none"
-          }} />
+          }} downloadFile={myCV} />
         </div>
       </div>
     </div>

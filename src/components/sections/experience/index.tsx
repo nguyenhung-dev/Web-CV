@@ -8,7 +8,7 @@ const Experience = () => {
   const { t } = useTranslation();
 
   return (
-    <section className="experience text-[var(--foreground)] my-4 sm:my-20 py-10 sm:py-13 border-t border-[var(--border-top-exp)]">
+    <section id="experience" className="experience text-[var(--foreground)] my-4 sm:my-20 py-10 sm:py-13 border-t border-[var(--border-top-exp)]">
       <h2 className="text-center font-[600] text-2xl sm:text-3xl mb-6">{t('exp.experiences')}</h2>
       <div className="px-4 md:px-15 sm:text-[20px] text-center text-base/8 mb-2 md:mb-12" data-aos="zoom-in-left">
         <span>{t('exp.exp-title')}</span>

@@ -36,5 +36,10 @@
   },
   "skill": {
     "title": "Skills"
+  },
+  "projectPage": {
+    "title": "My recent products",
+    "subtitle": "Here are some self-taught projects that I have developed, each one representing a step forward in my journey of skill development.",
+    "tech": "Technologies:"
   }
 }

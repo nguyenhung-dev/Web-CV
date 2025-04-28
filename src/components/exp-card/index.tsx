@@ -1,8 +1,8 @@
-import { ExpCard } from "@/types/type";
+import { TExpCard } from "@/types/type";
 import { useTranslation } from "react-i18next";
 import "./style.css";
 
-const CustomExpCard = (props: ExpCard) => {
+const CustomExpCard = (props: TExpCard) => {
   const { time, title, platform, desc, ...rest } = props;
   const { t } = useTranslation();
   let platformText = "";

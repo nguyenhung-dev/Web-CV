@@ -1,0 +1,26 @@
+.project-card {
+  background: var(--bg-project-card);
+  box-shadow: 0 3px 5px 2px var(--shadow-project-card);
+  border: 1px solid var(--bg-project-card);
+  transition: 0.3s ease-in-out;
+}
+.project-card:hover {
+  border: 1px solid var(--border-hover-project-card);
+}
+.card-btn a {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  padding: 7px 13px;
+  background-color: var(--btn-project-card);
+  font-size: 17px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-weight: 500;
+  color: #fff;
+  transition: 0.3s ease-in-out;
+}
+.card-btn a:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 0 10px 5px rgba(10, 0, 209, 0.507);
+}

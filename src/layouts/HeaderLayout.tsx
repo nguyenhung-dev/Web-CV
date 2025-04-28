@@ -8,13 +8,15 @@ import { BsSunFill } from "react-icons/bs";
 import { BsFillMoonStarsFill } from "react-icons/bs";
 import viLang from "@/assets/svg/language/vi.svg"
 import enLang from "@/assets/svg/language/en.svg"
+import "./style.css";
+
 const HeaderLayout = () => {
   const { t, i18n } = useTranslation();
   const [theme, setTheme] = useState<'dark' | 'light'>('dark');
   const navigation = [
     { name: t('header.home'), href: '/', current: true },
-    { name: t('header.about'), href: '/about', current: false },
     { name: t('header.project'), href: '/project', current: false },
+    { name: t('header.about'), href: '/about', current: false },
   ]
   function classNames(...classes: any[]) {
     return classes.filter(Boolean).join(' ')
@@ -60,8 +62,9 @@ const HeaderLayout = () => {
                       key={item.name}
                       to={item.href}
                       className={classNames(
-                        isActive ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
-                        'rounded-md px-3 py-2 text-sm font-medium',
+                        isActive ? 'menu-active' : '',
+                        isActive ? '' : 'menu-header',
+                        'rounded-md px-3 py-2 text-sm font-medium text-[var(--text-header)]',
                       )}
                     >
                       {item.name}
@@ -117,7 +120,7 @@ const HeaderLayout = () => {
                 as={Link}
                 to={item.href}
                 className={classNames(
-                  isActive ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
+                  isActive ? 'bg-emerald-600 text-white' : 'text-gray-300 hover:bg-emerald-500 hover:text-white',
                   'block rounded-md px-3 py-2 text-base font-medium',
                 )}
               >

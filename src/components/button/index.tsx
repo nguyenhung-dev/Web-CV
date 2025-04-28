@@ -6,12 +6,25 @@ type TProps = {
   style?: React.CSSProperties;
   className?: string;
   onClick?: () => void;
+  downloadFile?: string;
 }
 
 const CustomButton = (props: TProps) => {
-  const { text, icon, style, className, onClick } = props;
+  const { text, icon, style, className, onClick, downloadFile } = props;
+
+  const handleDownload = () => {
+    if (downloadFile) {
+      const link = document.createElement('a');
+      link.href = downloadFile;
+      link.download = "le_nguyen_hung_cv.pdf";
+      link.click();
+    } else if (onClick) {
+      onClick();
+    }
+  };
+
   return (
-    <button onClick={onClick} style={style} className={`custom-button ${className}`}>
+    <button onClick={handleDownload} style={style} className={`custom-button ${className}`}>
       <span>{text}</span>
       <span>{icon}</span>
     </button>

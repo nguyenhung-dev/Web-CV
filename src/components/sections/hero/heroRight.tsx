@@ -1,11 +1,11 @@
-import { Developer } from "@/types/type";
+import { IDeveloper } from "@/types/type";
 import "./style.css";
 
 const HeroRight = () => {
-  const developerData: Developer = {
+  const developerData: IDeveloper = {
     name: "Lê Nguyên Hùng",
-    education: "Trường Cao đẳng FPT Polytechnic",
-    position: "Front-end Developer",
+    // education: "Trường Cao đẳng FPT Polytechnic",
+    position: "Front-end Intern",
     skills: ['HTML5', 'CSS3', 'ES6', 'TypeScript', 'ReactJS', 'PHP', 'MySQL'],
     hardWorker: true,
     quickLearner: true,

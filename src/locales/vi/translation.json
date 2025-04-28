@@ -36,5 +36,10 @@
   },
   "skill": {
     "title": "Kỹ năng"
+  },
+  "projectPage": {
+    "title": "Các sản phẩm gần đây của tôi",
+    "subtitle": "Sau đây là các dự án tự học mà tôi đã phát triển, mỗi dự án đều là một bước tiến trong hành trình rèn luyện kỹ năng của tôi.",
+    "tech": "Công nghệ:"
   }
 }

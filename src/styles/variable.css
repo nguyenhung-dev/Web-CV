@@ -4,6 +4,7 @@
 
 :root {
   --logo: #fd1b97;
+  --text-header: #333;
   --logo-hover: #fd1b97;
   --background: linear-gradient(135deg, #ffffff, #d1f4f9);
   --background-language: #fff;
@@ -39,17 +40,28 @@
   --border-hover-skill-card: #ff60bdc8;
   --text-hover-skill-card: rgb(0, 166, 50);
   --dropdown-icon: #fff;
+  --bg-project-card: #fff;
+  --shadow-project-card: #7d7d7d80;
+  --btn-project-card: #007cb1;
+  --border-hover-project-card: #00bfff;
 }
 
 .dark {
   --logo: #1bfd9c;
+  --text-header: #3effac;
   --logo-hover: #82ffc9;
   --background: linear-gradient(
     90deg,
     rgba(13, 18, 36, 1) 0%,
+    rgb(4, 4, 43) 88%,
+    rgb(16, 7, 54) 100%
+  );
+  /* --background: linear-gradient(
+    90deg,
+    rgba(13, 18, 36, 1) 0%,
     rgba(0, 0, 64, 1) 88%,
     rgba(13, 0, 64, 1) 100%
-  );
+  ); */
   --background-language: #3a3a3a;
   --text-main: #fc5bab;
   --icon: #fc5bab;
@@ -79,6 +91,10 @@
   --border-hover-skill-card: #6ac8ff;
   --text-hover-skill-card: rgb(255, 33, 163);
   --dropdown-icon: #fff;
+  --bg-project-card: #0d1224;
+  --shadow-project-card: #002f70;
+  --btn-project-card: #0053a7;
+  --border-hover-project-card: #fd1b97;
 }
 
 .scroll-top {
