@@ -20,11 +20,10 @@ const HeaderLayout = () => {
     return classes.filter(Boolean).join(' ')
   }
   useEffect(() => {
-    const isDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-    const defaultTheme = isDark ? 'dark' : 'light';
-    setTheme(defaultTheme);
-    document.documentElement.classList.toggle('dark', defaultTheme === 'dark');
+    setTheme('dark');
+    document.documentElement.classList.add('dark');
   }, []);
+
   const toggleTheme = () => {
     const newTheme = theme === 'dark' ? 'light' : 'dark';
     setTheme(newTheme);
@@ -50,7 +49,7 @@ const HeaderLayout = () => {
           </div>
           <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
             <div className="flex shrink-0 items-center">
-              <Link to="/" className="text-[var(--text-content)] text-[20px] font-medium">{t('header.author')}</Link>
+              <Link to="/" className="logo text-[20px] font-medium">Portfolio</Link>
             </div>
             <div className="hidden sm:ml-6 sm:block">
               <div className="flex space-x-4">

@@ -9,9 +9,12 @@ const Intro = () => {
 
   return (
     <section className="introSection gap-10 md:gap-15 flex py-12 text-[var(--foreground)]">
-      <div className="intro-left text-[19px]">
-        <div className="main-title text-center sm:text-left text-3xl font-[600]">
-          <div className="uppercase"><span className="text-[#ff2d96] mr-3">{t('introduce.about')}</span><span>{t('introduce.myself')}</span></div>
+      <div className="intro-left text-[19px]" data-aos="fade-up">
+        <div className="main-title text-center sm:text-left text-2xl sm:text-3xl font-[600]">
+          <div className="uppercase">
+            <span className="text-[#ff2d96] mr-3">{t('introduce.about')}</span>
+            <span>{t('introduce.myself')}</span>
+          </div>
         </div>
         <div className="mt-7">
           <span>{t('introduce.heading1')}<FcReading size={22} className="inline ml-1" /></span>
@@ -30,7 +33,7 @@ const Intro = () => {
           <span>{t('introduce.heading4.2')}</span>
         </div>
       </div>
-      <div className="intro-right my-auto relative hidden sm:block">
+      <div className="intro-right my-auto relative hidden sm:block" data-aos="fade-left">
         <Tilt>
           <div className="intro-avt md:w-[250px] md:h-[250px] w-[200px] h-[200px] rounded-[50%] mr-18 md:mr-24 border border-[#5c6aff] overflow-hidden">
             <img src={avatar} alt="Nguyên Hùng" />

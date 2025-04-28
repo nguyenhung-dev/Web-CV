@@ -13,7 +13,7 @@ const HeroRight = () => {
   };
 
   return (
-    <div className="hero-right mt-8 sm:mt-3 sm:w-1/2 relative">
+    <div className="hero-right mt-8 sm:mt-3 sm:w-1/2 relative" data-aos="zoom-in" data-aos-delay="1000">
       <div className="border-top absolute rounded-[50%] h-[3px] w-[98%] top-0 z-2 right-[50%] translate-x-[50%]" style={{ backgroundImage: 'var(--border-top-hero-right)' }}></div>
       <div className="code-body border rounded-[8px] border-[var(--border-hero)] z-1 w-full"
         style={{ backgroundImage: 'var(--background-hero-right)' }}>

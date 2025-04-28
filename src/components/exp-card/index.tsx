@@ -3,7 +3,7 @@ import { useTranslation } from "react-i18next";
 import "./style.css";
 
 const CustomExpCard = (props: ExpCard) => {
-  const { time, title, platform, desc } = props;
+  const { time, title, platform, desc, ...rest } = props;
   const { t } = useTranslation();
   let platformText = "";
   if (platform && platform.length > 0) {
@@ -11,7 +11,7 @@ const CustomExpCard = (props: ExpCard) => {
   }
 
   return (
-    <div className="exp-card relative border py-5 px-10 rounded-[15px] text-[var(--foreground)]">
+    <div className="exp-card relative border py-5 px-10 rounded-[15px] text-[var(--foreground)]" {...rest}>
       <div className="text-center mb-3 flex flex-col">
         <span className="text-xl font-[500] text-pink-600">{title}</span>
         <span className="text-[16px]">{time}</span>

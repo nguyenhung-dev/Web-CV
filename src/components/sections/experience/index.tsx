@@ -1,41 +1,16 @@
 import { useTranslation } from "react-i18next";
 import expIcon from "@/assets/images/exp-icon.png";
 import CustomExpCard from "@/components/exp-card";
+import { EXPRIENCE_DATA } from "@/data/data";
 import "./style.css";
 
 const Experience = () => {
   const { t } = useTranslation();
-  const expData = [
-    {
-      time: '10/2023 - 1/2024',
-      title: 'Học cơ bản về lập trình',
-      platform: ['Youtobe', 'Udemy'],
-      desc: 'Học các kỹ năng cơ bản về lập trình với C++, C#'
-    },
-    {
-      time: '3/2024 - 5/2024',
-      title: 'Học lập trình Web Front-end',
-      platform: ['F8-FullStack'],
-      desc: 'Phát triển ứng dụng Web bằng HTML, CSS và JavaSript'
-    },
-    {
-      time: '8/2024 - 12/2024',
-      title: 'Học lập trình Web Back-end',
-      platform: ['Youtobe', 'Udemy'],
-      desc: 'Phát triển ứng dụng Web bằng PHP và MySQL, xây dựng các chức năng động cho website.'
-    },
-    {
-      time: '2/2025 - 4/2025',
-      title: 'Học lập trình Web Front-end (ReactJS + TypeScript)',
-      platform: ['Youtobe', 'F8-FullStack'],
-      desc: 'Phát triển ứng dụng Web hiện đại bằng ReactJS, TypeScript và Tailwind.'
-    }
-  ];
 
   return (
     <section className="experience text-[var(--foreground)] my-4 sm:my-20 py-10 sm:py-13 border-t border-[var(--border-top-exp)]">
-      <h2 className="text-center font-[600] text-3xl mb-6">{t('exp.experiences')}</h2>
-      <div className="px-4 md:px-15 text-[18px] sm:text-[20px] text-center text-base/8 mb-2 md:mb-12">
+      <h2 className="text-center font-[600] text-2xl sm:text-3xl mb-6">{t('exp.experiences')}</h2>
+      <div className="px-4 md:px-15 sm:text-[20px] text-center text-base/8 mb-2 md:mb-12" data-aos="zoom-in-left">
         <span>{t('exp.exp-title')}</span>
         <span className="text-pink-500 font-[600] italic">{t('exp.exp-programming')}</span>
       </div>
@@ -50,7 +25,7 @@ const Experience = () => {
         </div>
         <div className="exp-right w-full mt-12 sm:mt-4 md:w-1/2">
           <div className="flex flex-col gap-5">
-            {expData.map((item) => {
+            {EXPRIENCE_DATA.map((item, index) => {
               return (
                 <CustomExpCard
                   key={Math.random()}
@@ -58,6 +33,8 @@ const Experience = () => {
                   title={item.title}
                   platform={item.platform}
                   desc={item.desc}
+                  data-aos="fade-left"
+                  data-aos-delay={index * 300}
                 />
               )
             })}

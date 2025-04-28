@@ -25,7 +25,7 @@ const HeroLeft = () => {
         <span className='font-medium text-[var(--foreground)]'>{t('hero.iAm')}</span>
         <span className='ml-[15px] text-[var(--text-main)] font-bold'>{t('header.author')}</span>
       </h2>
-      <div className='text-[22px] text-[var(--text-content)] font-medium'>
+      <div className='text-[20px] text-[var(--text-content)] font-medium'>
         <TypewriterEffect data={data} />
       </div>
       <div className='mt-8 sm:mt-15'>

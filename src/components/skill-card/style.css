@@ -1,0 +1,16 @@
+.skill-card {
+  background-color: var(--bg-skill-card);
+  transition: transform 0.4s ease-in-out, border 0.4s ease-in-out;
+  border: 1px solid var(--border-skill-card);
+  box-shadow: 0 3px 10px var(--border-skill-card);
+}
+.skill-card:hover {
+  border: 2px solid var(--border-hover-skill-card);
+  transform: scale(1.2);
+}
+.skill-card:hover .skill-name {
+  transition: color 0.4s ease-in-out;
+}
+.skill-card:hover .skill-name {
+  color: var(--text-hover-skill-card);
+}

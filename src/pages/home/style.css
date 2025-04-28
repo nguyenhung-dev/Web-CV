@@ -1,0 +1,12 @@
+.heroSection {
+  background-size: cover;
+  backdrop-filter: blur(10px);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 768px) {
+  .heroSection {
+    background-image: none !important;
+  }
+}
