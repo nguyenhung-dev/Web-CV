@@ -1,4 +1,4 @@
-import { TAppData, TProjectCard } from "@/types/type";
+import { TAppData } from "@/types/type";
 import w3layout from "@/assets/images/w3layout_clone.png";
 import vietnamtravel from "@/assets/images/vietnam_travel.png";
 import petshop from "@/assets/images/petshop.png";

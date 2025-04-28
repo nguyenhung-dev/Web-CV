@@ -10,7 +10,6 @@ const ProjectCard = (props: TProjectCard) => {
   const { t } = useTranslation();
   const notify = () => toast("Demo chưa có sẵn!");
 
-
   return (
     <>
       <div className="project-card pb-5 flex flex-col justify-between rounded-[10px] overflow-hidden">
