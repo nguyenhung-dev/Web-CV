@@ -45,3 +45,23 @@
 .hero-right .circle-third {
   background-color: #1cc93d;
 }
+.glowing {
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.05) 70%,
+    rgba(255, 255, 255, 0) 100%
+  );
+    animation: glowDown 3s linear infinite;
+    pointer-events: none;
+  }
+
+  @keyframes glowDown {
+    0% {
+      transform: translateY(-100%);
+    }
+    100% {
+      transform: translateY(200%);
+    }
+  }
+</style>

@@ -33,7 +33,7 @@ function App() {
       </div >
       <div
         onClick={handleScrollToTop}
-        className='scroll-top fixed bottom-[20px] right-[20px] w-[50px] h-[50px] rounded-[50%] flex items-center justify-center cursor-pointer'
+        className='scroll-top fixed z-[9999] bottom-[20px] right-[20px] w-[50px] h-[50px] rounded-[50%] flex items-center justify-center cursor-pointer'
         style={{
           background: "var(--text-main)",
           color: "var(--dropdown-icon)",

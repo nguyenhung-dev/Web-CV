@@ -2,7 +2,7 @@
   animation: upDown 3s ease-in-out infinite;
 }
 .circle-rotate {
-  transform: rotate3d(4, 0, -2, 63deg);
+  transform: rotate3d(1, 0, 0, 75deg);
   animation: rotateFixed 3s linear infinite;
   transform-style: preserve-3d;
   pointer-events: none;
@@ -39,9 +39,9 @@
 }
 @keyframes rotateFixed {
   0% {
-    transform: rotate3d(4, 0, -2, 63deg) rotateZ(0deg);
+    transform: rotate3d(1, 0, 0, 75deg) rotateZ(0deg);
   }
   100% {
-    transform: rotate3d(4, 0, -2, 63deg) rotateZ(360deg);
+    transform: rotate3d(1, 0, 0, 75deg) rotateZ(360deg);
   }
 }

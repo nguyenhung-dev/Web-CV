@@ -24,18 +24,18 @@ const HeroLeft = () => {
 
   return (
     <div className="hero-left sm:w-1/2">
-      <h2 className='text-3xl font-medium mb-2 sm:mb-3'>
+      <div className='text-3xl font-medium mb-2 sm:mb-3'>
         <span className='text-[var(--foreground)]'>
           {t('hero.greeting')} !
         </span>
         <span className="wave ml-2">
           👋🏻
         </span>
-      </h2>
-      <h2 className='text-[25px] sm:text-[33px] mb-2 sm:mb-4'>
+      </div>
+      <div className='text-[25px] sm:text-[33px] mb-2 sm:mb-4'>
         <span className='font-medium text-[var(--foreground)]'>{t('hero.iAm')}</span>
         <span className='ml-[15px] text-[var(--text-main)] font-bold'>{t('header.author')}</span>
-      </h2>
+      </div>
       <div className='text-[20px] text-[var(--text-content)] font-medium'>
         <TypewriterEffect data={data} />
       </div>

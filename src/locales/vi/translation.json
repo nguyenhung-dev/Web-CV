@@ -41,5 +41,18 @@
     "title": "Các sản phẩm gần đây của tôi",
     "subtitle": "Sau đây là các dự án tự học mà tôi đã phát triển, mỗi dự án đều là một bước tiến trong hành trình rèn luyện kỹ năng của tôi.",
     "tech": "Công nghệ:"
+  },
+  "about": {
+    "target":"Tôi hướng đến trở thành một lập trình viên toàn diện trong lĩnh vực phát triển web, bắt đầu từ Front-end và mở rộng sang Back-end, tối ưu hiệu suất, bảo mật web, cũng như triển khai hệ thống. Tôi luôn nỗ lực học hỏi, cập nhật công nghệ mới để tạo ra các sản phẩm web chất lượng, có chiều sâu kỹ thuật và giá trị thực tiễn lâu dài cho doanh nghiệp.",
+    "heading1": "Tôi là ai?",
+    "paragraph1": "Xin chào mọi người, tôi là ",
+    "paragraph2": " đến từ vùng đất đầy nắng và gió Vĩnh Linh, Quảng Trị.",
+    "paragraph3": "Hiện tại tôi đang là sinh viên năm cuối của trường Cao đẳng FPT Polytechnic Đà Nẵng (FPOLY), chuyên ngành ",
+    "major": "Lập trình Website",
+    "paragraph4": "Dù từng gặp không ít khó khăn và vấp ngã trên hành trình học tập, tôi vẫn giữ vững đam mê với lập trình và quyết tâm theo đuổi con đường này. Tôi luôn nỗ lực học hỏi và rèn luyện để phát triển kỹ năng một cách toàn diện.",
+    "paragraph5": "Bên cạnh việc học, tôi còn thích chơi thể thao và các tựa game mobile để rèn luyện tư duy.",
+    "paragraph6": "Thời gian rảnh, tôi có thói quen tìm hiểu công nghệ qua các video và bài viết chuyên ngành. Có lẽ vì vậy mà tôi không thường xuyên tham gia các hoạt động ngoại khóa hay tụ tập bạn bè.",
+    "education": "Giáo dục",
+    "educationName": "Cao đẳng FPT Polytechnic Đà Nẵng (FPOLY)"
   }
 }

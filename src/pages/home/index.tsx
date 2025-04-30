@@ -9,7 +9,7 @@ import "./style.css";
 const HomePage = () => {
 
   return (
-    <div className="mx-auto max-w-7xl px-4 sm:px-8 lg:px-8 overflow-hidden">
+    <div className="mx-auto max-w-7xl px-4 sm:px-8 overflow-hidden">
       <section className="heroSection sm:flex py-6 sm:py-15" style={{
         backgroundImage: `url(${bgImg})`,
       }}>

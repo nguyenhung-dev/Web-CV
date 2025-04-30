@@ -91,7 +91,7 @@ export const PROJECT_DATA = [
     title:"Portfolio",
     tech:["ReactJS", "TypeScript", "TailwindCSS"],
     desc:"Một trang web portfolio cá nhân được xây dựng bằng ReactJS, TypeScript và TailwindCSS, hỗ trợ hai ngôn ngữ Tiếng Việt và Tiếng Anh, giao diện đẹp mắt, có chế độ Dark Mode và tương thích tốt trên mọi thiết bị.",
-    githubUrl: "https://github.com/nguyenhung-dev/Web-CV.git",
+    // githubUrl: "https://github.com/nguyenhung-dev/Web-CV.git",
     demoUrl: "https://web-cv-7yd.pages.dev/",
   }
 ]

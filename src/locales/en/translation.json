@@ -41,5 +41,18 @@
     "title": "My recent products",
     "subtitle": "Here are some self-taught projects that I have developed, each one representing a step forward in my journey of skill development.",
     "tech": "Technologies:"
+  },
+  "about": {
+    "target":"I aim to become a full-stack developer in the field of web development, starting with Front-end and expanding into Back-end, performance optimization, web security, and system deployment. I am always eager to learn and stay updated with new technologies to create high-quality web products with technical depth and long-lasting practical value for businesses.",
+    "heading1": "Who am I?",
+    "paragraph1": "Hello everyone, I'm  ",
+    "paragraph2": " from the sunny and windy land of Vinh Linh, Quang Tri.",
+    "paragraph3": "I am currently a senior student at FPT Polytechnic College (FPOLY), Danang, majoring in ",
+    "major": "Website Programming",
+    "paragraph4": "Although I have encountered many difficulties and failures on my learning journey, I still maintain my passion for programming and am determined to pursue this path. I always strive to learn and practice to develop my skills comprehensively.",
+    "paragraph5": "Besides studying, I also like playing sports and mobile games to train my thinking.",
+    "paragraph6": "In my free time, I have a habit of learning about technology through videos and specialized articles. Maybe that's why I don't often participate in extracurricular activities or hang out with friends.",
+    "education": "Education",
+    "educationName": "FPT Polytechnic College Danang (FPOLY)"
   }
 }

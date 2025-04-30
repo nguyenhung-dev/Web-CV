@@ -1,18 +1,15 @@
 import { useTranslation } from 'react-i18next';
 import { locales } from "@/i18n/i18n"
-import { useEffect, useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Disclosure, DisclosureButton, DisclosurePanel, Menu, MenuButton, MenuItem, MenuItems } from '@headlessui/react';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
-import { BsSunFill } from "react-icons/bs";
-import { BsFillMoonStarsFill } from "react-icons/bs";
 import viLang from "@/assets/svg/language/vi.svg"
 import enLang from "@/assets/svg/language/en.svg"
+import ToggleTheme from '@/components/toggle-theme';
 import "./style.css";
 
 const HeaderLayout = () => {
   const { t, i18n } = useTranslation();
-  const [theme, setTheme] = useState<'dark' | 'light'>('dark');
   const navigation = [
     { name: t('header.home'), href: '/', current: true },
     { name: t('header.project'), href: '/project', current: false },
@@ -21,16 +18,6 @@ const HeaderLayout = () => {
   function classNames(...classes: any[]) {
     return classes.filter(Boolean).join(' ')
   }
-  useEffect(() => {
-    setTheme('dark');
-    document.documentElement.classList.add('dark');
-  }, []);
-
-  const toggleTheme = () => {
-    const newTheme = theme === 'dark' ? 'light' : 'dark';
-    setTheme(newTheme);
-    document.documentElement.classList.toggle('dark', newTheme === 'dark');
-  };
   const currentLanguage = locales[i18n.language as keyof typeof locales];
   const changeLanguage = (lng: "en" | "vi") => {
     i18n.changeLanguage(lng);
@@ -74,39 +61,39 @@ const HeaderLayout = () => {
               </div>
             </div>
           </div>
-          <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
-            <Menu as="div" className="relative mr-3 ">
-              <div onClick={toggleTheme}>{theme === 'dark' ? <BsSunFill color='yellow' className='text-xl cursor-pointer' /> : <BsFillMoonStarsFill color='black' className='text-l cursor-pointer' />}</div>
-            </Menu>
-            <Menu as="div" className="relative inline-block text-left">
-              <div>
-                <MenuButton className="inline-flex w-full justify-center gap-x-1.5 rounded-md py-2 sm:px-3 sm:py-2 text-sm font-semibold text-gray-900 shadow-xs ring-inset cursor-pointer">
-                  <img
-                    style={{ height: 20, width: 20 }}
-                    src={(currentLanguage == 'English' ? enLang : viLang)} alt='language'
-                  />
-                </MenuButton>
-              </div>
-              <MenuItems
-                transition
-                className="absolute right-0 z-10 mt-2 w-35 sm:w-40 origin-top-right rounded-md bg-[var(--background-language)] text-[var(--foreground)] shadow-lg ring-1 ring-black/5 transition focus:outline-hidden data-closed:scale-95 data-closed:transform data-closed:opacity-0 data-enter:duration-100 data-enter:ease-out data-leave:duration-75 data-leave:ease-in"
-              >
-                <div className="py-1">
-                  <MenuItem>
-                    <button onClick={() => changeLanguage("vi")} className="flex gap-2 px-4 py-2 text-sm  data-focus:bg-gray-100 data-focus:text-gray-900 data-focus:outline-hidden w-full cursor-pointer"> <img
-                      style={{ height: 20, width: 20 }}
-                      src={viLang} alt='vietnamese'
-                    /> <span>Tiếng Việt</span> </button>
-                  </MenuItem>
-                  <MenuItem>
-                    <button onClick={() => changeLanguage("en")} className="flex gap-2 px-4 py-2 text-sm  data-focus:bg-gray-100 data-focus:text-gray-900 data-focus:outline-hidden w-full cursor-pointer"><img
-                      style={{ height: 20, width: 20 }}
-                      src={enLang} alt='english'
-                    /> <span>English</span> </button>
-                  </MenuItem>
+          <div className="absolute inset-y-0 right-0 flex items-center gap-2 pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
+            <ToggleTheme />
+            <div className="hidden sm:block">
+              <Menu as="div" className="relative inline-block text-left">
+                <div>
+                  <MenuButton className="inline-flex w-full justify-center gap-x-1.5 rounded-md py-2 sm:px-3 sm:py-2 text-sm  cursor-pointer">
+                    <img
+                      style={{ height: 23, width: 23 }}
+                      src={(currentLanguage == 'English' ? enLang : viLang)} alt='language'
+                    />
+                  </MenuButton>
                 </div>
-              </MenuItems>
-            </Menu>
+                <MenuItems
+                  transition
+                  className="absolute right-0 z-10 mt-2 w-35 sm:w-40 origin-top-right rounded-md bg-[var(--background-language)] text-[var(--foreground)] shadow-lg ring-1 ring-black/5 transition focus:outline-hidden data-closed:scale-95 data-closed:transform data-closed:opacity-0 data-enter:duration-100 data-enter:ease-out data-leave:duration-75 data-leave:ease-in"
+                >
+                  <div className="py-1">
+                    <MenuItem>
+                      <button onClick={() => changeLanguage("vi")} className="flex gap-2 px-4 py-2 text-sm  data-focus:bg-gray-100 data-focus:text-gray-900 data-focus:outline-hidden w-full cursor-pointer">
+                        <img style={{ height: 20, width: 20 }} src={viLang} alt='vietnamese' />
+                        <span>Tiếng Việt</span>
+                      </button>
+                    </MenuItem>
+                    <MenuItem>
+                      <button onClick={() => changeLanguage("en")} className="flex gap-2 px-4 py-2 text-sm  data-focus:bg-gray-100 data-focus:text-gray-900 data-focus:outline-hidden w-full cursor-pointer">
+                        <img style={{ height: 20, width: 20 }} src={enLang} alt='english' />
+                        <span>English</span>
+                      </button>
+                    </MenuItem>
+                  </div>
+                </MenuItems>
+              </Menu>
+            </div>
           </div>
         </div>
       </div>
@@ -120,18 +107,47 @@ const HeaderLayout = () => {
                 as={Link}
                 to={item.href}
                 className={classNames(
-                  isActive ? 'bg-emerald-600 text-white' : 'text-gray-300 hover:bg-emerald-500 hover:text-white',
-                  'block rounded-md px-3 py-2 text-base font-medium',
+                  isActive ? 'bg-emerald-600 text-white' : 'text-[var(--foreground)] hover:bg-emerald-500 hover:text-white',
+                  'block rounded-md px-3 py-2 text-base font-medium ',
                 )}
               >
                 {item.name}
               </DisclosureButton>
             );
           })}
-
+          <Menu as="div" className="relative block text-left">
+            <div>
+              <MenuButton className="inline-flex w-full gap-x-1.5 rounded-md py-3 sm:px-3 sm:py-2 text-sm cursor-pointer ml-2">
+                <img
+                  style={{ height: 23, width: 23 }}
+                  src={(currentLanguage == 'English' ? enLang : viLang)} alt='language'
+                />
+                <span className='text-[var(--foreground)] font-[500]'>{currentLanguage == 'English' ? 'English' : 'Tiếng Việt'}</span>
+              </MenuButton>
+            </div>
+            <MenuItems
+              transition
+              className="absolute left-[10px] z-10 w-35 origin-top-right rounded-md bg-[var(--background-language)] text-[var(--foreground)] shadow-lg ring-1 ring-black/5 transition focus:outline-hidden data-closed:scale-95 data-closed:transform data-closed:opacity-0 data-enter:duration-100 data-enter:ease-out data-leave:duration-75 data-leave:ease-in"
+            >
+              <div className="py-1">
+                <MenuItem>
+                  <button onClick={() => changeLanguage("vi")} className="flex gap-2 px-4 py-2 text-sm  data-focus:bg-gray-100 data-focus:text-gray-900 data-focus:outline-hidden w-full cursor-pointer">
+                    <img style={{ height: 20, width: 20 }} src={viLang} alt='vietnamese' />
+                    <span>Tiếng Việt</span>
+                  </button>
+                </MenuItem>
+                <MenuItem>
+                  <button onClick={() => changeLanguage("en")} className="flex gap-2 px-4 py-2 text-sm  data-focus:bg-gray-100 data-focus:text-gray-900 data-focus:outline-hidden w-full cursor-pointer">
+                    <img style={{ height: 20, width: 20 }} src={enLang} alt='english' />
+                    <span>English</span>
+                  </button>
+                </MenuItem>
+              </div>
+            </MenuItems>
+          </Menu>
         </div>
       </DisclosurePanel>
-    </Disclosure >
+    </Disclosure>
   )
 }
 
