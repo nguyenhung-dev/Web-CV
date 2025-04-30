@@ -1,8 +1,8 @@
-import HeroLeft from "@/components/sections/hero/heroLeft";
-import HeroRight from "@/components/sections/hero/heroRight";
-import Intro from "@/components/sections/intro";
-import Experience from "@/components/sections/experience";
-import Skills from "@/components/sections/skill";
+import HeroLeft from "@/components/home-sections/hero/heroLeft";
+import HeroRight from "@/components/home-sections/hero/heroRight";
+import Intro from "@/components/home-sections/intro";
+import Experience from "@/components/home-sections/experience";
+import Skills from "@/components/home-sections/skill";
 import bgImg from "@/assets/svg/section.svg";
 import "./style.css";
 

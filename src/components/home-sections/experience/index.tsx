@@ -41,7 +41,7 @@ const Experience = () => {
                   platform={item.platform}
                   desc={item.desc}
                   data-aos="fade-left"
-                  data-aos-delay={index * 200}
+                  data-aos-delay={index * 100}
                 />
               )
             })}

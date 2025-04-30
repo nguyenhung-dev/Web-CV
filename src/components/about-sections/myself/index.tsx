@@ -1,5 +1,6 @@
 import { useTranslation } from "react-i18next";
 import avtImg from "@/assets/images/avatar.jpg";
+import "./style.css";
 
 const MyselfAbout = () => {
   const { t } = useTranslation();
@@ -18,15 +19,24 @@ const MyselfAbout = () => {
             <span>{t('about.paragraph3')}</span>
             <span className="text-[#fc5bab] font-[500] italic">{t('about.major')}.</span>
           </div>
-          <div className="">
+          <div className="mb-5">
             {t('about.paragraph4')}
+          </div>
+          <div>
+            {t('about.paragraph4.1')}
           </div>
         </div>
       </div>
-      <div className="right py-5 flex justify-center items-center">
-        <div className="card-client">
-          <div className="card-img flex justify-center">
-            <img src={avtImg} alt="Nguyên Hùng" className="object-cover w-[250px] h-[250px] rounded-[50%]" />
+      <div className="right card-main py-7 flex justify-center items-center bg-[#2cb593] rounded-[10px] px-10">
+        <div className="card-client flex flex-col gap-5 items-center">
+          <div className="card-img relative overflow-hidden rounded-[50%]">
+            <img src={avtImg} alt="Nguyên Hùng" className="object-cover w-[180px] h-[180px] rounded-[50%]" />
+            <div className="card-main-effect"></div>
+          </div>
+          <div className="card-info text-center border-t px-3 pt-3 text-white">
+            <div className="text-[23px] font-[700] uppercase ">Lê Nguyên Hùng</div>
+            <div className="text-[21px] font-[600]">Front-end Intern</div>
+            <div className="text-[18px] mt-2">07/06/2001</div>
           </div>
         </div>
       </div>
