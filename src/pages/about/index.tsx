@@ -1,10 +1,9 @@
 import { useTranslation } from 'react-i18next';
-import { DotLottieReact } from '@lottiefiles/dotlottie-react';
-import emailAnimation from "@/animations/lottie/emailAnimation.lottie";
 import TargetABout from '@/components/about-sections/target';
 import MyselfAbout from '@/components/about-sections/myself';
 import HobbiesAbout from '@/components/about-sections/hobbies';
 import EducationAbout from '@/components/about-sections/education';
+import ContactAbout from '@/components/about-sections/contact';
 import "./style.css";
 
 const AboutPage = () => {
@@ -16,14 +15,7 @@ const AboutPage = () => {
       <MyselfAbout />
       <EducationAbout />
       <HobbiesAbout />
-
-      <div>
-        <DotLottieReact
-          src={emailAnimation}
-          loop
-          autoplay
-        />
-      </div>
+      <ContactAbout />
     </div>
   )
 }

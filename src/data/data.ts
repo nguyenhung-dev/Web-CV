@@ -8,7 +8,8 @@ import portfolio from "@/assets/images/portfolio.png";
 export const APP_DATA: TAppData = {
   FACEBOOK_URL: "https://www.facebook.com/nguyen.hung.223991",
   GITHUB_URL: "https://github.com/nguyenhung-dev",
-  GMAIL_URL: "mailto:ng.hung01.it@gmail.com"
+  GMAIL_URL: "mailto:ng.hung01.it@gmail.com",
+  INSTAGRAM_URL: "https://www.threads.com/@lenguyenhungnakroth"
  }
 
 export const SKILLS_DATA: string[] = [

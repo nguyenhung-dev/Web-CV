@@ -10,8 +10,8 @@ const ProjectPage = () => {
     <div className="mx-auto max-w-7xl px-4 sm:px-8 lg:px-8 overflow-hidden text-[var(--foreground)]">
       <section className="mt-15">
         <div className="text-center">
-          <h1 className="text-3xl text-[var(--logo)] font-[600] mb-3">{t('projectPage.title')}</h1>
-          <span className="inline-block w-[750px] text-[19px] opacity-75 font-[400]">{t('projectPage.subtitle')}</span>
+          <h1 className="text-[22px] sm:text-3xl text-[var(--logo)] font-[600] mb-3">{t('projectPage.title')}</h1>
+          <span className="inline-block sm:w-[750px] text-[17px] sm:text-[19px] opacity-75 font-[400]">{t('projectPage.subtitle')}</span>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12 mt-12 pb-10">
           {

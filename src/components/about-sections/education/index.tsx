@@ -8,8 +8,8 @@ const EducationAbout = () => {
   const { t } = useTranslation();
 
   return (
-    <div className="my-8 py-8 flex flex-col md:flex-row" >
-      <div className="hidden md:block left w-full sm:w-1/2">
+    <div className="my-8 py-8 flex flex-col-reverse md:flex-row" >
+      <div className="md:block left w-full sm:w-1/2 mt-8 md:mt-0">
         <DotLottieReact
           src={educationAnimate}
           loop

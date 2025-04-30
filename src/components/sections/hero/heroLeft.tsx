@@ -1,6 +1,5 @@
 import { useTranslation } from 'react-i18next';
 import TypewriterEffect from '@/components/typewriter/Typewriter';
-import { APP_DATA } from '@/data/data';
 import SocicalMedia from '@/components/socical';
 import CustomButton from '@/components/button';
 import { AiFillFire } from "react-icons/ai";
@@ -40,10 +39,7 @@ const HeroLeft = () => {
         <TypewriterEffect data={data} />
       </div>
       <div className='mt-8 sm:mt-15'>
-        <SocicalMedia
-          facebook={APP_DATA.FACEBOOK_URL}
-          github={APP_DATA.GITHUB_URL}
-          gmail={APP_DATA.GMAIL_URL} />
+        <SocicalMedia />
       </div>
       <div className='flex gap-2 md:gap-7 mt-10 sm:mt-15'>
         <div className='hidden sm:block'>
