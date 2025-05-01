@@ -20,6 +20,7 @@ export const ContactAbout = () => {
             loop
             autoplay
           />
+          <span className="text-center block font-[600] text-2xl">Contact me</span>
         </a>
       </div>
     </div>

@@ -16,7 +16,7 @@ const SocicalMedia = () => {
       <a href={APP_DATA.GMAIL_URL} target="_blank" title="ng.hung01.it@gmail.com">
         <MdOutgoingMail size={35} color="var(--icon)" />
       </a>
-      <a href={APP_DATA.INSTAGRAM_URL} target="_blank" title="ng.hung01.it@gmail.com">
+      <a href={APP_DATA.INSTAGRAM_URL} target="_blank" title="@lenguyenhungnakroth">
         <FaInstagram size={35} color="var(--icon)" />
       </a>
     </div>

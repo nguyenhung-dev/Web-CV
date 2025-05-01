@@ -27,7 +27,7 @@ const MyselfAbout = () => {
           </div>
         </div>
       </div>
-      <div className="right card-main py-7 flex justify-center items-center bg-[#2cb593] rounded-[10px] px-10">
+      <div className="right mt-7 sm:mt-0 card-main mx-10 sm:mx-0 py-5 flex justify-center items-center bg-[#2cb593] rounded-[10px] px-3 sm:px-10">
         <div className="card-client flex flex-col gap-5 items-center">
           <div className="card-img relative overflow-hidden rounded-[50%]">
             <img src={avtImg} alt="Nguyên Hùng" className="object-cover w-[180px] h-[180px] rounded-[50%]" />

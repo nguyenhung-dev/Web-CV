@@ -3,6 +3,7 @@ import HeroRight from "@/components/home-sections/hero/heroRight";
 import Intro from "@/components/home-sections/intro";
 import Experience from "@/components/home-sections/experience";
 import Skills from "@/components/home-sections/skill";
+import Courses from "@/components/home-sections/courses";
 import bgImg from "@/assets/svg/section.svg";
 import "./style.css";
 
@@ -19,6 +20,7 @@ const HomePage = () => {
       <Intro />
       <Experience />
       <Skills />
+      <Courses />
     </div>
   )
 }

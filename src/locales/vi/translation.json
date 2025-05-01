@@ -50,11 +50,15 @@
     "paragraph3": "Hiện tại tôi đang là sinh viên năm cuối của trường Cao đẳng FPT Polytechnic Đà Nẵng (FPOLY), chuyên ngành ",
     "major": "Lập trình Website",
     "paragraph4": "Dù từng gặp không ít khó khăn và vấp ngã trên hành trình học tập, tôi vẫn giữ vững đam mê với lập trình và quyết tâm theo đuổi con đường này.",
-    "paragraph4.1": "Với tinh thần học hỏi không ngừng và khát khao cầu tiến, tôi luôn đối mặt với thử thách như cơ hội để phát triển bản thân. Tôi tin rằng việc không ngừng hoàn thiện kỹ năng và học hỏi từ mỗi trải nghiệm là chìa khóa để trở thành một lập trình viên toàn diện và đóng góp giá trị thực sự.",
+    "paragraph4.1": "Tôi luôn xem thử thách là cơ hội để bứt phá, không ngừng học hỏi và hoàn thiện bản thân. Với tinh thần cầu tiến và khát vọng phát triển, tôi tin rằng mỗi trải nghiệm đều là bước đệm để trở thành một lập trình viên toàn diện, mang lại giá trị thực tiễn cho dự án và cộng đồng.",
     "paragraph5": "Bên cạnh việc học, tôi còn thích chơi thể thao và các tựa game mobile để rèn luyện tư duy.",
     "paragraph6": "Thời gian rảnh, tôi có thói quen tìm hiểu công nghệ qua các video và bài viết chuyên ngành. Có lẽ vì vậy mà tôi không thường xuyên tham gia các hoạt động ngoại khóa hay tụ tập bạn bè.",
     "education": "Giáo dục",
     "educationName": "Cao đẳng FPT Polytechnic Đà Nẵng (FPOLY)",
     "contact": "TÌM TÔI TRÊN"
+  },
+  "courses":  {
+    "title": "Chứng chỉ & Khóa học",
+    "subtitle": "Tiếp cận công nghệ bằng tinh thần tự học, tôi đã hoàn thành nhiều khóa học online để củng cố kiến thức và kỹ năng. Những chứng chỉ dưới đây là minh chứng cho quá trình đó."
   }
 }

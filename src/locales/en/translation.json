@@ -50,11 +50,15 @@
     "paragraph3": "I am currently a senior student at FPT Polytechnic College (FPOLY), Danang, majoring in ",
     "major": "Website Programming",
     "paragraph4": "Although I have encountered many difficulties and failures on my learning journey, I still maintain my passion for programming and am determined to pursue this path. ",
-    "paragraph4.1": "With a spirit of continuous learning and a desire to improve, I always face challenges as opportunities to develop myself. I believe that constantly improving skills and learning from each experience is the key to becoming a well-rounded programmer and contributing real value.",
+    "paragraph4.1": "I always see challenges as opportunities to grow, continuously learning and improving myself. With a progressive mindset and a strong desire to develop, I believe every experience is a stepping stone toward becoming a well-rounded developer who delivers real value to projects and the community",
     "paragraph5": "Besides studying, I also like playing sports and mobile games to train my thinking.",
     "paragraph6": "In my free time, I have a habit of learning about technology through videos and specialized articles. Maybe that's why I don't often participate in extracurricular activities or hang out with friends.",
     "education": "Education",
     "educationName": "FPT Polytechnic College Danang (FPOLY)",
     "contact": "FIND ME ON"
+  },
+  "courses":  {
+    "title": "Certificates & Courses",
+    "subtitle": "Driven by self-learning, I completed several online courses to build up my knowledge and skills. These certificates reflect that journey."
   }
 }
