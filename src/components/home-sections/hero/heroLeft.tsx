@@ -4,7 +4,7 @@ import SocicalMedia from '@/components/socical';
 import CustomButton from '@/components/button';
 import { AiFillFire } from "react-icons/ai";
 import { IoMdDownload } from "react-icons/io";
-import myCV from "@/assets/files/pdf/cv.pdf";
+import myCV from "@/assets/files/pdf/Le_Nguyen_Hung_CV_Frontend_Intern.pdf";
 import "./style.css"
 
 const HeroLeft = () => {

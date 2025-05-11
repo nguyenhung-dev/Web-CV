@@ -16,7 +16,7 @@ const CustomButton = (props: TProps) => {
     if (downloadFile) {
       const link = document.createElement('a');
       link.href = downloadFile;
-      link.download = "le_nguyen_hung_cv.pdf";
+      link.download = "Le_Nguyen_Hung_CV_Frontend_Intern.pdf";
       link.click();
     } else if (onClick) {
       onClick();
